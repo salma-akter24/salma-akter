@@ -47,7 +47,9 @@
           >
           <span style="--i: 3" data-text="Web Designer">Web Designer</span>
           <span style="--i: 2" data-text="UI Enthusiast">UI Enthusiast</span>
-          <span style="--i: 1" data-text="Creative Thinker">Creative Thinker</span>
+          <span style="--i: 1" data-text="Creative Thinker"
+            >Creative Thinker</span
+          >
         </h2>
         <p id="about">
           I create clean, responsive web experiences with a focus on thoughtful
@@ -68,15 +70,20 @@
       <div class="home-img">
         <div class="img-box">
           <div class="img-item">
-            <img src="cute.avif" alt="Profile illustration" />
+            <img src="images.jpg" alt="Profile illustration" />
           </div>
         </div>
       </div>
     </section>
     <footer id="footer">
       <h6>
-        <i class="bx bx-copyright"></i> 2026 Salma Akter. All rights reserved.
+        <i class="bx bx-copyright"></i>
+        <span id="current-year"></span> Salma Akter. All rights reserved.
       </h6>
     </footer>
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
